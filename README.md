@@ -1,20 +1,20 @@
 
-# 🚲 Divvy Bike User Behavior Analysis
+#  Divvy Bike User Behavior Analysis
 
-## 📊 Objective
+##  Objective
 Analyze rider behavior using 300K+ records from the Divvy Bike dataset to uncover usage patterns by time, day, and user type.
 
-## 📁 Repository Structure
+##  Repository Structure
 - `SQL/`: SQL queries used for data cleaning, enrichment, and analysis.
 - `visuals/`: Visual outputs (charts, heatmaps) created using Tableau or Power BI.
 - `README.md`: Project documentation and findings.
 
-## 🛠 Tools Used
+##  Tools Used
 - SQL (MySQL syntax)
 - Tableau / Power BI
 - Excel
 
-## 📈 Key Analysis: Ride Patterns by Hour & Day
+##  Key Analysis: Ride Patterns by Hour & Day
 ```sql
 SELECT 
     member_casual,
@@ -32,12 +32,12 @@ ORDER BY
     member_casual, FIELD(day_of_week, 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'), hour_of_day;
 ```
 
-## 🌐 Insights
+##  Insights
 - **Casual users** ride most often on weekends, especially during late mornings and afternoons.
 - **Members** ride primarily on weekdays, peaking during typical commute hours (7–9 AM, 4–6 PM).
 - Casual users have **longer average ride durations** compared to members.
 
-## 📷 Visuals
+##  Visuals
 ![Heatmap](visuals/peak_hour_heatmap.png)
 
 ## 📎 Future Work
